@@ -354,3 +354,8 @@ footer .vmq{
     font-size: 20px;
     margin : 20px;
 }
+.pagination .page-link{
+    background : #2F3346;
+    color : white;
+    border : 1px solid white;
+}
