@@ -1,0 +1,72 @@
+*{
+    padding : 0;
+    margin : 0;
+    background : #191B24;
+    color : white;
+}
+
+.btn{
+    background: #ffc107;
+      color : white;
+      padding : 5px;
+      width : 150px;
+      margin : 15px;
+}
+@media screen and (max-width : 1200px) {
+    header .sreach input{
+        width : 300px;
+    }
+    header .subscribe {
+        width : 100px;
+    }
+    header .subscribe i {
+    font-size: 13px;
+}
+header .menu ul li {
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+}
+@media screen and (max-width : 992px) {
+     header .sreach input{
+        width : 150px;
+        height : 50px;
+    }
+    header .subscribe .user {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width : 757px) {
+   header .sreach input{
+        width : 100px;
+        height : 30px;
+    }
+    header .sreach i {
+        font-size: 15px;
+    }
+    header .logo img {
+        width : 100px;
+    }
+    section .vn {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width : 400px) {
+    header .sreach input{
+        width : 30px;
+       font-size: 10px;
+    }
+    header .sreach i {
+        font-size: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+      header .logo img {
+        width : 50px;
+    }
+    header .menu ul li{
+        font-size: 10px;
+           margin-left: 5px;
+    }
+}

@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/base.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="https://www.rophim.li/images/logo.svg" alt="LOGO">
+    </div>
+    <div class="sreach">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" placeholder="Tìm kiếm tên phim, diễn viên">
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="#">Phim lẻ</a></li>
+        <li><a href="#">Phim bộ</a></li>
+        <li><a href="#">Thể loại</a></li>
+        <li><a href="#">Quốc gia</a></li>
+        <li><a href="#">Xem chung</a></li>
+        <li><a href="#">Thêm</a></li>
+      </ul>
+    </div>
+    <div class="subscribe">
+      <i class="fa-solid fa-user"></i>
+      <div class="user">Thành Viên</div>
+      <div class="modal">
+        <div class="inner-content">
+          <div class="logo">
+            <img src="./assets/image/meimei.jpg" alt="meocuaquynh">
+          </div>
+          <div class="content">
+            <div class="login">Đăng Nhập</div>
+            <form action="">
+              <input type="text" placeholder="Email"> <br>
+              <input type="text" placeholder="Password"> <br>
+              <button class="btn">Đăng nhập </button> <br>
+              <a href=""> Quên mật khẩu </a> <br>
+              <button class="btnclose">X</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section>
+    <div class="container">
+      <div class="vn">HOÀNG SA TRƯỜNG SA LÀ CỦA VIỆT NAM</div>
+      <div class="title">Hôm nay xem gì?</div>
+      <p class="d-inline-flex gap-1">
+        <div class="filter" id="filterToggle">
+          Bộ Lọc<i class="fa-solid fa-sort-up"></i>
+        </div>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card ">
+          <div class="filter-group ">
+            <div class="filter-title">Quốc gia:</div>
+            <div class="filter-options">
+              <div class="filter-option active">Tất cả</div>
+              <div class="filter-option">Anh</div>
+              <div class="filter-option">Canada</div>
+              <div class="filter-option">Hàn Quốc</div>
+              <div class="filter-option">Hồng Kông</div>
+              <div class="filter-option">Đài Loan</div>
+              <div class="filter-option">Đức</div>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <div class="filter-title">Loại phim:</div>
+            <div class="filter-options">
+              <div class="filter-option">Tất cả</div>
+              <div class="filter-option">Phim lẻ</div>
+              <div class="filter-option active">Phim bộ</div>
+            </div>
+          </div>
+
+
+          <div class="filter-group ">
+            <div class="filter-title">Xếp hạng:</div>
+            <div class="filter-options">
+              <div class="filter-option active">Tất cả</div>
+              <div class="filter-option">P (Mọi lứa tuổi)</div>
+              <div class="filter-option">K (Dưới 13 tuổi)</div>
+              <div class="filter-option">T13 (13 tuổi trở lên)</div>
+              <div class="filter-option">T16 (16 tuổi trở lên)</div>
+              <div class="filter-option">T18 (18 tuổi trở lên)</div>
+            </div>
+          </div>
+
+          <div class="filter-group ">
+            <div class="filter-title">Thể loại:</div>
+            <div class="filter-options">
+              <div class="filter-option active">Tất cả</div>
+              <div class="filter-option">Anime</div>
+              <div class="filter-option">Chiến Tranh</div>
+              <div class="filter-option">Chính Kịch</div>
+              <div class="filter-option">Hài</div>
+              <div class="filter-option">Thể Thao</div>
+              <div class="filter-option">Giả Tưởng</div>
+              <div class="filter-option">Tâm Lý</div>
+            </div>
+          </div>
+
+
+          <div class="filter-group ">
+            <div class="filter-title">Phiên bản:</div>
+            <div class="filter-options">
+              <div class="filter-option active">Tất cả</div>
+              <div class="filter-option">Phụ đề</div>
+              <div class="filter-option">Lồng tiếng</div>
+
+            </div>
+          </div>
+
+
+          <div class="filter-group ">
+            <div class="filter-title">Năm sản xuất:</div>
+            <div class="filter-options">
+              <div class="filter-option active">Tất cả</div>
+              <div class="filter-option">2025</div>
+              <div class="filter-option">2024</div>
+              <div class="filter-option">2023</div>
+              <div class="filter-option">2022</div>
+
+            </div>
+          </div>
+
+
+          <div class="filter-group ">
+            <div class="filter-title">Sắp xếp:</div>
+            <div class="filter-options">
+              <div class="filter-option active">Mới nhất</div>
+              <div class="filter-option">Mới cập nhật</div>
+              <div class="filter-option">Điểm IMDb</div>
+              <div class="filter-option">Lượt xem</div>
+            </div>
+          </div>
+
+
+          <div class="filter-actions">
+            <button class="btn">Lọc kết quả →</button>
+            <button class="btn" id="btnclose">Đóng</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section2>
+    <div class="container-fluid px-0 py-0">
+      <div class="row g-3">
+        <div class="col-12">
+          <div class="new">Phim mới cập nhật</div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-2">
+          <div class="item p-3 text-center">
+            <div class="img">
+              <img src="https://static.nutscdn.com/vimg/300-0/773c670ee102f52beae7d7ab9d9b93b3.jpg" alt="">
+            </div>
+            <div class="name">Người dẫn đường</div>
+            <div class="movie-overlay">
+              <div class="logo">
+              <img src="https://static.nutscdn.com/vimg/300-0/773c670ee102f52beae7d7ab9d9b93b3.jpg" alt="">
+              </div>
+             <h3>Người dẫn đường</h3>
+              <div class="tags">
+                <span>IMDb 6.1</span>
+                <span>2015</span>
+                <span>Tập 20</span>
+              </div>
+              <div class="actions">
+                <button class="btn">🎬 Xem ngay</button>
+                <button class="btn">❤️ Thích</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-2">
+          <div class="item p-3 text-center">
+            <div class="img">
+              <img src="https://static.nutscdn.com/vimg/300-0/f9ff705fe020ce52ca70fbae0161fa35.jpg" alt="">
+            </div>
+            <div class="name">Anh hùng Bất Bại</div>
+            <div class="movie-overlay">
+              <div class="logo">
+              <img src="https://static.nutscdn.com/vimg/300-0/f9ff705fe020ce52ca70fbae0161fa35.jpg" alt="">
+              </div>
+            <h3>Anh hùng Bất Bại</h3>
+              <div class="tags">
+                <span>IMDb 6.4</span>
+                <span>2025</span>
+                <span>Tập 23</span>
+              </div>
+              <div class="actions">
+                <button class="btn">🎬 Xem ngay</button>
+                <button class="btn">❤️ Thích</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-2">
+          <div class="item p-3 text-center">
+            <div class="img">
+              <img src="https://static.nutscdn.com/vimg/300-0/dd43513839478c861d2c77355486c81e.jpg" alt="">
+            </div>
+            <div class="name">Mùa hạ cuối</div>
+            <div class="movie-overlay">
+              <div class="logo">
+              <img src="https://static.nutscdn.com/vimg/300-0/dd43513839478c861d2c77355486c81e.jpg" alt="">
+              </div>
+             <h3>Mùa hạ cuối</h3>
+              <div class="tags">
+                <span>IMDb 4</span>
+                <span>2009</span>
+                <span>Tập 8</span>
+              </div>
+              <div class="actions">
+                <button class="btn">🎬 Xem ngay</button>
+                <button class="btn">❤️ Thích</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-2">
+          <div class="item p-3 text-center">
+            <div class="img">
+              <img src="https://static.nutscdn.com/vimg/300-0/7ef020d510faa934f9cb45ca793340b0.jpg" alt="">
+            </div>
+            <div class="name">Con nhà tông</div>
+            <div class="movie-overlay">
+              <div class="logo">
+              <img src="https://static.nutscdn.com/vimg/300-0/7ef020d510faa934f9cb45ca793340b0.jpg" alt="">
+              </div>
+          <h3>Con nhà tông</h3>
+              <div class="tags">
+                <span>IMDb 4.2</span>
+                <span>2008</span>
+                <span>Tập 24</span>
+              </div>
+              <div class="actions">
+                <button class="btn">🎬 Xem ngay</button>
+                <button class="btn">❤️ Thích</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-2">
+          <div class="item p-3 text-center">
+            <div class="img">
+              <img src="https://static.nutscdn.com/vimg/300-0/2d7f3caf23e576bf4c401f13e443d6b3.jpg" alt="">
+            </div>
+            <div class="name">Năm ngón tay diệu kì</div>
+            <div class="movie-overlay">
+              <div class="logo">
+              <img src="https://static.nutscdn.com/vimg/300-0/2d7f3caf23e576bf4c401f13e443d6b3.jpg" alt="">
+              </div>
+              <h3>Năm ngón tay diệu kì</h3>
+              <div class="tags">
+                <span>IMDb 5.2</span>
+                <span>2002</span>
+                <span>Tập 2</span>
+              </div>
+              <div class="actions">
+                <button class="btn">🎬 Xem ngay</button>
+                <button class="btn">❤️ Thích</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-2">
+          <div class="item p-3 text-center">
+            <div class="img">
+              <img src="https://static.nutscdn.com/vimg/300-0/2f6419b9caa997f47241b8e9f7827957.jpg" alt="">
+            </div>
+            <div class="name">Ngũ Tiên Quỷ Lực</div>
+            <div class="movie-overlay">
+              <div class="logo">
+              <img src="https://static.nutscdn.com/vimg/300-0/2f6419b9caa997f47241b8e9f7827957.jpg" alt="">
+              </div>
+            <h3>Ngũ Tiên Quỷ Lực</h3>
+              <div class="tags">
+                <span>IMDb 6.9</span>
+                <span>2005</span>
+                <span>Tập 24</span>
+              </div>
+              <div class="actions">
+            <button class="btn">🎬 Xem ngay</button>
+                <button class="btn">❤️ Thích</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-2">
+          <div class="item p-3 text-center">
+            <div class="img">
+              <img src="https://static.nutscdn.com/vimg/300-0/6c9779087671f044479dec8f8e06ce28.jpg" alt="">
+            </div>
+            <div class="name">Ám Hà Truyện</div>
+            <div class="movie-overlay">
+              <div class="logo">
+              <img src="https://static.nutscdn.com/vimg/300-0/6c9779087671f044479dec8f8e06ce28.jpg" alt="">
+              </div>
+            <h3>Ám Hà Truyện</h3>
+              <div class="tags">
+                <span>IMDb 9</span>
+                <span>2015</span>
+                <span>Tập 20</span>
+              </div>
+              <div class="actions">
+                <button class="btn">🎬 Xem ngay</button>
+                <button class="btn">❤️ Thích</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-2">
+          <div class="item p-3 text-center">
+            <div class="img">
+              <img src="https://static.nutscdn.com/vimg/300-0/f8249386ce185e16dbe7e95c80ddd541.jpg "alt="">
+            </div>
+            <div class="name">Mặt Đắng</div>
+            <div class="movie-overlay">
+              <div class="logo">
+              <img src="https://static.nutscdn.com/vimg/300-0/f8249386ce185e16dbe7e95c80ddd541.jpg" alt="">
+              </div>
+               <h3>Mặt Đắng</h3>
+              <div class="tags">
+                <span>IMDb 4</span>
+                <span>2025</span>
+                <span>Tập 14</span>
+              </div>
+              <div class="actions">
+                <button class="btn">🎬 Xem ngay</button>
+                <button class="btn">❤️ Thích</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-2">
+          <div class="item p-3 text-center">
+            <div class="img">
+              <img src="https://static.nutscdn.com/vimg/300-0/bb0be13420a149d9c25e47b68f1aedb6.jpg" alt="">
+            </div>
+            <div class="name">Thiếu niên</div>
+            <div class="movie-overlay">
+              <div class="logo">
+              <img src="https://static.nutscdn.com/vimg/300-0/bb0be13420a149d9c25e47b68f1aedb6.jpg" alt="">
+              </div>
+              <h3>Thiếu niên</h3>
+              <div class="tags">
+                <span>IMDb 3.6</span>
+                <span>2019</span>
+                <span>Tập 10</span>
+              </div>
+              <div class="actions">
+                <button class="btn">🎬 Xem ngay</button>
+                <button class="btn">❤️ Thích</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-2">
+          <div class="item p-3 text-center">
+            <div class="img">
+              <img src="https://static.nutscdn.com/vimg/300-0/e035dcd0252ff91e869786d75c153b51.jpg" alt="">
+            </div>
+            <div class="name">Gia đình</div>
+            <div class="movie-overlay">
+              <div class="logo">
+              <img src="https://static.nutscdn.com/vimg/300-0/e035dcd0252ff91e869786d75c153b51.jpg" alt="">
+              </div>
+               <h3>Gia Đình</h3>
+              <div class="tags">
+                <span>IMDb 3.5</span>
+                <span>2025</span>
+                <span>Tập 4</span>
+              </div>
+              <div class="actions">
+                <button class="btn">🎬 Xem ngay</button>
+                <button class="btn">❤️ Thích</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-2">
+          <div class="item p-3 text-center">
+            <div class="img">
+              <img src="https://static.nutscdn.com/vimg/300-0/08cb698288836e180ef902e8129c2283.png" alt="">
+            </div>
+            <div class="name">Nhâp thanh vân</div>
+            <div class="movie-overlay">
+              <div class="logo">
+              <img src="https://static.nutscdn.com/vimg/300-0/08cb698288836e180ef902e8129c2283.png" alt="">
+              </div>
+              <h3>Nhập thanh vân</h3>
+              
+              <div class="tags">
+                <span>IMDb 8.4</span>
+                <span>2005</span>
+                <span>Tập 1</span>
+              </div>
+              <div class="actions">
+                <button class="btn">Xem ngay</button>
+                <button class="btn">❤️ Thích</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-2">
+          <div class="item p-3 text-center">
+            <div class="img">
+              <img src="https://static.nutscdn.com/vimg/300-0/d82b4fddf856636d5800d0be4eff8bde.jpg" alt="">
+            </div>
+            <div class="name">TOKYO</div>
+            <div class="movie-overlay">
+              <div class="logo">
+              <img src="https://static.nutscdn.com/vimg/300-0/d82b4fddf856636d5800d0be4eff8bde.jpg" alt="">
+              </div>
+               <h3>TOKYO</h3>
+              <div class="tags">
+                <span>IMDb 4.4</span>
+                <span>1998</span>
+                <span>Tập 5</span>
+              </div>
+              <div class="actions">
+                <button class="btn">🎬 Xem ngay</button>
+                <button class="btn">❤️ Thích</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+  </section2>
+  <footer>
+    <div class="container">
+      <div class="box">
+      <div class="logo">
+      <img src="./assets/image/meimei.jpg" alt="">
+      </div>
+      <div class="social">
+        <ul>
+        <a href="https://www.facebook.com/ga.poor.35">
+          <li><i class="fa-brands fa-facebook"></i></li>
+        </a>
+         <a href="https://www.facebook.com/ga.poor.35">
+          <li><i class="fa-brands fa-instagram"></i></li>
+        </a>
+         <a href="https://www.facebook.com/ga.poor.35">
+          <li><i class="fa-brands fa-youtube"></i></li>
+        </a>
+        </ul>
+      </div>
+      </div>
+      <div class="desc">QuynhFilm – Phim hay cả rổ - Trang xem phim online chất lượng cao miễn phí Vietsub, thuyết minh, lồng tiếng full HD. Kho phim mới khổng lồ, phim chiếu rạp, phim bộ, phim lẻ từ nhiều quốc gia như Việt Nam, Hàn Quốc, Trung Quốc, Thái Lan, Nhật Bản, Âu Mỹ… đa dạng thể loại. Khám phá nền tảng phim trực tuyến hay nhất 2024 chất lượng 4K!</div>
+    </div>
+    <div class="vmq">DESBY_VUMANHQUYNH_2025</div>
+  </footer>
+  <script src="./assets/js/collapse.js"> </script>
+  <script src="./assets/js/modal.js"></script>
+  <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
