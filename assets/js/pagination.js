@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const movies = document.querySelectorAll(".item"); // tất cả phim
-  const itemsPerPage = 8; // mỗi trang 8 phim
+  const itemsPerPage = 6; // mỗi trang 8 phim
   const pagination = document.querySelector(".pagination");
   const totalPages = Math.ceil(movies.length / itemsPerPage);
   let currentPage = 1;

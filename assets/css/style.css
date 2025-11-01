@@ -26,8 +26,9 @@ header .menu ul li a:hover{
     color : yellow;
 }
 header .logo img {
-    width: 150px;
-    height: auto;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
 }
 
 header .sreach {
